@@ -1,0 +1,120 @@
+html body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*diseño movil primero*/
+body{
+    width: 375px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 95%)
+}
+section{
+    width: 321px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.Sedans{
+    height: 433px;
+    width: 100%;
+    background-color: hsl(31, 77%, 52%) ;
+    color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+}
+.Suvs{
+    height: 433px;
+    width: 100%;
+    background-color: hsl(184, 100%, 22%) ;
+    color: hsla(0, 0%, 100%, 0.75);
+    display: block;
+}
+.Luxury{
+    height: 433px;
+    width: 100%;
+    background-color: hsl(179, 100%, 13%) ;
+    color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 0px 0px 10px 10px;
+    display: block;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+p{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: start;
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+button{
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 35px;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight:bolder
+}
+.Sedans p{
+    width: 240px;
+}
+.Suvs p{
+    width: 230px;
+}
+.Luxury p {
+    width: 230px;
+}
+img{
+    margin-top:50px;
+    margin-left:50px;
+}
+.Sedans button{
+    color:hsl(31, 77%, 52%)
+}
+.Suvs button{
+    color:hsl(184, 100%, 22%)
+}
+.Luxury button{
+    color:hsl(179, 100%, 13%)
+}
+button:hover{
+    cursor:pointer;
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+@media all and (min-width: 699px){
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section{
+        width: 914px;
+        height: 498px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .Sedans{
+        border-radius: 10px 0px 0px 10px;
+    }
+    .Luxury{
+        border-radius: 0px 10px 10px 0px;
+    }
+    .attribution{
+        display: block;
+    }
+}
